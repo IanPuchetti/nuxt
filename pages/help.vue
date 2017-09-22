@@ -5,7 +5,7 @@
         Help
       </h1>
       <h2 class="subtitle">
-        Some text helping you
+        Some text helping {{name}}
       </h2>
       <nuxt-link to="/" class="button--grey">Back</nuxt-link>
     </div>
@@ -15,7 +15,12 @@
 <script>
 
 export default {
-  components: {
+  data () {
+    return {
+      name: this.$route.query.name
+    }
+  },
+  created () {
   }
 }
 </script>

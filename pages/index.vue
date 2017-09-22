@@ -7,7 +7,7 @@
       <h2 class="subtitle">
         Some text explaining something
       </h2>
-      <nuxt-link to="/help" class="button--green">Help</nuxt-link>
+      <nuxt-link :to="{path:'help', query: { name : 'YOUUUU' }}" class="button--green">Help</nuxt-link>
     </div>
   </section>
 </template>
